@@ -1,7 +1,10 @@
-# PI AGI: Personalized Artificial General Intelligence
+# @pi-agi/senior-software-engineer
+Senior Software Engineer AGIs including both Frontend and Backend implemented using PI AGI Core Library.
+
+## PI AGI: Personalized Artificial General Intelligence
 
 [![Donate](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-yellow.svg)](https://www.buymeacoffee.com/RwIpTEd)
-[![Stars](https://img.shields.io/github/stars/fatihturker/PI-AGI.svg?style=flat-square)](https://github.com/fatihturker/PI-AGI/stargazers)
+[![Stars](https://img.shields.io/github/stars/pi-agi/senior-software-engineer.svg?style=flat-square)](https://github.com/pi-agi/senior-software-engineer/stargazers)
 
 Welcome to PI AGI, a groundbreaking project that aims to revolutionize the world of Artificial Intelligence. By developing a base for role-based AGIs (Artificial General Intelligences) that are personalized and optimized for specific tasks, we can unlock the true power and meaning of AGI. As we usher in a new era of AI-driven advancements, it's time for everyone to get ready and embrace the potential of personalized AGIs, which will play a transformative role in shaping our world and driving innovation across various domains.
 
