@@ -1,6 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import * as path from 'path';
-import { MainAGI, OpenAIAzureProvider, ActionType } from '@pi-agi/core';
+import {
+  MainAGI,
+  OpenAIAzureProvider,
+  ActionType,
+  ActionUtil,
+} from '@pi-agi/core';
 
 /**
  * A class representing a Senior Frontend Software Engineer AGI.
@@ -45,6 +50,12 @@ export class SeniorFrontendSoftwareEngineerAGI extends MainAGI<ActionType> {
         'frontend',
         'senior-frontend-engineer-angular-next.agi.md'
       )
+    );
+
+    this.actionUtil = new ActionUtil<ActionType>(
+      this.loggerUtil,
+      this.taskDir,
+      this.ltmPath
     );
   }
 }
