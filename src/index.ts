@@ -65,13 +65,13 @@ async function frontend() {
 
   const content = await createContent(documentation);
   const { provider, maxRetryCount, maxRetryInterval } = createProvider();
-  const agi = new SeniorBackendSoftwareEngineerAGI(
+  const agi = new SeniorFrontendSoftwareEngineerAGI(
     provider,
     maxRetryCount,
     maxRetryInterval
   );
 
-  agi.init();
+  await agi.init();
   await agi.start(content);
 }
 
@@ -93,7 +93,7 @@ async function backend() {
     maxRetryInterval
   );
 
-  agi.init();
+  await agi.init();
   await agi.start(content);
 }
 
@@ -113,17 +113,17 @@ async function promptUser() {
   );
   switch (choice) {
     case '1':
-      backend();
+      await backend();
       break;
     case '2':
-      frontend();
+      await frontend();
       break;
     case '3':
       console.log('Goodbye!');
       break;
     default:
       console.log('Invalid choice. Please try again.');
-      promptUser();
+      await promptUser();
       break;
   }
 }
